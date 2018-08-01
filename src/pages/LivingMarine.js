@@ -1,3 +1,5 @@
+// @flow
+
 import React, { Component } from "react";
 import Header from "components/base/Header";
 import styled from "styled-components";
@@ -18,7 +20,10 @@ const DivFlexItem = styled.div`
   border: 1px solid gray;
 `;
 
-export default class LivingMarine extends Component {
+type Props = {};
+type State = {};
+
+export default class LivingMarine extends Component<Props, State> {
   render() {
     const headerHeight = 30;
     const sideWidth = 300;
