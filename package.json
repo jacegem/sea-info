@@ -18,6 +18,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "flow-bin": "^0.77.0",
     "react-hot-loader": "^4.3.4"
   }
 }

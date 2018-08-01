@@ -1,3 +1,4 @@
+// @flow
 import React, { Component } from "react";
 import styled from "styled-components";
 
@@ -7,9 +8,22 @@ const DivHeader = styled.div`
   ${({ height }) => (height ? `height: ${height}px` : null)};
 `;
 
-export default class Header extends Component {
+type Props = {
+  title: string,
+  height: number
+};
+type State = {
+  // bar: number
+};
+
+export default class Header extends Component<Props, State> {
   render() {
     const { title, height } = this.props;
-    return <DivHeader height={height}>#Header - {title}</DivHeader>;
+
+    return (
+      <DivHeader height={height}>
+        <div>#Header - {title}</div>
+      </DivHeader>
+    );
   }
 }
