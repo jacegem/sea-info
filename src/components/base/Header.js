@@ -3,12 +3,13 @@ import styled from "styled-components";
 
 const DivHeader = styled.div`
   width: 100%;
-  height: 50px;
   background-color: #c9a9c9;
+  ${({ height }) => (height ? `height: ${height}px` : null)};
 `;
 
 export default class Header extends Component {
   render() {
-    return <DivHeader>This is Header</DivHeader>;
+    const { title, height } = this.props;
+    return <DivHeader height={height}>#Header - {title}</DivHeader>;
   }
 }
