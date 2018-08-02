@@ -10,7 +10,7 @@ const DivHeader = styled.div`
 
 type Props = {
   title: string,
-  height: number
+  height?: number
 };
 type State = {
   // bar: number
@@ -20,10 +20,6 @@ export default class Header extends Component<Props, State> {
   render() {
     const { title, height } = this.props;
 
-    return (
-      <DivHeader height={height}>
-        <div>#Header - {title}</div>
-      </DivHeader>
-    );
+    return <div>#Header - {title}</div>;
   }
 }

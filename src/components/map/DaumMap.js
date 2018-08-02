@@ -18,7 +18,8 @@ const DivPointInfo = styled.div`
 `;
 
 type Props = {
-  restHeight: number
+  restHeight?: number,
+  children: any
 };
 type State = {};
 
@@ -73,15 +74,11 @@ export default class DaumMap extends Component<Props, State> {
     return map;
   }
   render() {
-    const { restHeight } = this.props;
+    const { restHeight, children } = this.props;
     return (
-      <div>
-        <DivMap restHeight={restHeight} className="map" id="map">
-          <DivPointInfo>
-            <PointInfoPanel />
-          </DivPointInfo>
-        </DivMap>
-      </div>
+      <DivMap className="map" id="map">
+        {children}
+      </DivMap>
     );
   }
 }
