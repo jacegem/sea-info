@@ -1,13 +1,10 @@
 // @flow
-
 import React, { Component } from "react";
 import Header from "components/base/Header";
 import styled from "styled-components";
 import DaumMap from "components/map/DaumMap";
 
-const DivLivingMarine = styled.div`
-  min-width: 500px;
-`;
+const DivLivingMarine = styled.div`min-width: 500px;`;
 
 const DivFlex = styled.div`
   display: flex;

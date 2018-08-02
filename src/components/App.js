@@ -1,3 +1,5 @@
+// @flow
+
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
 import LivingMarine from "pages/LivingMarine";
@@ -12,7 +14,10 @@ injectGlobal`
   }
 `;
 
-class App extends Component {
+type Props = {};
+type State = {};
+
+class App extends Component<Props, State> {
   render() {
     return (
       <React.Fragment>

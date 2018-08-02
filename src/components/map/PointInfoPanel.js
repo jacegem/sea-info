@@ -1,6 +1,10 @@
+// @flow
 import React, { Component } from "react";
 
-export default class PointInfoPanel extends Component {
+type Props = {};
+type State = {};
+
+export default class PointInfoPanel extends Component<Props, State> {
   render() {
     return <div>Point info Panel</div>;
   }

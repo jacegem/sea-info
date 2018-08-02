@@ -1,3 +1,4 @@
+// @flow
 // 스킨스쿠버
 export const skinSuba = [
   "동명항",
