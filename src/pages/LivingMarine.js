@@ -12,6 +12,7 @@ const DivHeader = styled.div`
   position: absolute;
   z-index: 2;
   width: 100%;
+  height: 30px;
   background-color: #22ff4433;
 `;
 
